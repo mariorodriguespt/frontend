@@ -7,7 +7,7 @@ import _ from 'lodash'
 import moment from 'moment'
 import themes from '../components/user-themes.mss'
 
-import { userInfoItem } from '/imports/util/user.js';
+import { userInfoItem } from '/imports/util/user.js'
 import { attachmentTextMatcher } from '../../util/matchers'
 import { fitDimensions } from '../../util/cloudinary-transformations'
 import UsersSearchList from '../components/users-search-list'
@@ -214,8 +214,8 @@ class CaseDetails extends Component {
     return (
       <InfoItemContainer>
         {infoItemLabel('People involved:')}
-        {subscribed.map(( user )   => userInfoItem( user ))}
-        {pendingUsers.map(( user ) => userInfoItem( user ))}
+        {subscribed.map((user) => userInfoItem(user))}
+        {pendingUsers.map((user) => userInfoItem(user))}
         <Link to={`${match.url}/invite`}
           className='mt2 link flex items-center outline-0'>
           <div className={[themes.sized, themes.size1, 'br-100 ba b--moon-gray bg-transparent tc'].join(' ')}>
