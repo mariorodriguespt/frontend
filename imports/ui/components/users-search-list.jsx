@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import MenuItem from 'material-ui/MenuItem'
 import UserAvatar from './user-avatar'
-import themes from './user-themes.mss'
 
 import { getColorForUser } from '/imports/util/user.js'
 
